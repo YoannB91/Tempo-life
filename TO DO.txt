@@ -1,0 +1,44 @@
+= PHP :
+
+Utiliser la fonction include du php pour inclure de façon dynamique des éléments comme la navbar et le footer ?
+
+= Le header : 
+
+La barre de navigation des réseaux sociaux est fixe.
+La barre de navigation principal est quand à elle sticky, elle doit se coller en haut de l'écran et bouger lors du scroll de l'utilisateur sur le site.
+Ajouter la V2.0 de la barre de navigation.
+Retravailler les couleurs de la navbar.
+
+= L'acceuil :
+
+Le "en savoir plus" :
+- En faire un lien qui permet de descendre sur le site au clic
+- Ou alors il doit faire apparaitre une div de présentation quand on clique dessus.
+
+= Les cours de musique proposé : 
+
+Ajouter un démo musical ( sur ou sous l'image de la section. ).
+De préférence un son en lien avec l'instrument de l'image qui aura été choisi.
+
+Un petite animation qui fait tourner le cd : quand on le survole ou lors de la lecture du son ?
+
+Créer une page de Lorem Ipsum pour le 'Découvrir'.
+
+= Les profs de musique :
+
+Quand on clique sur l'une des div elle vient se positionner au centre de l'écran et un texte de description de la personne apparait sous son portrait. Comme pour les images sur les sites de solution de super soluce par exemple. 
+Ajouter des flèches à gauche et à droite pour naviguer entre les différents profs.
+
+= Les témoignages : 
+
+Ajouter un carousel pour naviguer entre les témoignages.
+Regarder ce que je trouve comme carousel sympa pour aller avec l'effet 3D de l'ombre des div de la section.
+
+= Le footer : 
+
+Ajouter un padding entre les icônes et les liens de navigation.
+
+= Fin du projet :
+
+Enlever les éléments innutiles du dossier IMG ( la maquette et le zonning ).
+Intégrer le projet au site Portfolio et l'ajouter dans les projets que j'ai réalisé.
