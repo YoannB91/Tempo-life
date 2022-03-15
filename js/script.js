@@ -1,6 +1,6 @@
-//§ Début de la barre de naviguation.
+//§ Début de la barre de navigation.
 
-//: Le clic sur l'icone du menu burger ouvre le menu vertical.
+//: Le clic sur l'icône du menu burger ouvre le menu vertical.
 var ham = document.getElementsByClassName('ham');
 var cacher = document.getElementsByClassName('cacher');
 
@@ -13,7 +13,7 @@ ham[0].addEventListener('click', function show() {
     };
 });
 
-//: Le clic sur l'icone X ferme le menu vertical.
+//: Le clic sur l'icône X ferme le menu vertical.
 var x = document.getElementsByClassName('menuX');
 
 x[0].addEventListener('click', function hide() {
@@ -38,7 +38,7 @@ for (var i=0; i < menuLink.length; i++) {
     })
 }
 
-//§ Fin de la barre de naviguation.
+//§ Fin de la barre de navigation.
 
 
 
