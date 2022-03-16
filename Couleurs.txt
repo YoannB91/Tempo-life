@@ -1,0 +1,18 @@
+Le header.
+
+La barre des réseaux sociaux : #b7774a
+
+Les liens de la navbar : #835434 sienna
+
+Le lien actif de la navbar : #d9703a    #D68C45
+
+La navbar : #D68545
+
+
+
+
+Le corps de la page.
+
+Les titres  : #b7774a
+
+Le footer : #432918

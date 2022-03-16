@@ -6,8 +6,9 @@
 
 /*: La barre des réseaux sociaux. */
 #socialBarHeader {
-	background-color: #B6774A; 
-	height: 5vh; 
+	background-color: #b7774a;
+	height: 5vh;
+	width: 100%;
 	display: flex;
     align-items: center;
 }
@@ -26,7 +27,7 @@
 
 /*: J'éloigne la dernière icône du bord de l'écran. */
 #socialBarHeader .fa-google {
-padding-right: 40px;
+	padding-right: 50px;
 }
 
 

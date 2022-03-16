@@ -16,6 +16,9 @@
     <!--+ J'importe mes favicons. -->
 
     <!--+ J'importe mes polices via google fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ballet&family=Jaldi&display=swap" rel="stylesheet">
 
     <!--$ Les fichiers css. -->
 
@@ -24,6 +27,9 @@
 
     <!--£ Le fichier CSS des règles générales. -->
     <link rel="stylesheet" href="css/styleGeneral.css">
+
+    <!--£ Le fichier CSS de la navbar. -->
+    <link rel="stylesheet" href="css/styleNavBurger.css">
 
     <!--£ Le fichier CSS principal. -->
     <link rel="stylesheet" href="css/styleIndex.css">
@@ -56,13 +62,151 @@
 
 
 
-        <!--! /!\ Barre de navigation ici. /!\ -->
+        <!--
+        : ************************************************************************************************************
+                                                    % La barre de navigation.
+        : ************************************************************************************************************
+        -->
 
+        <!--
+        . --------------------------------------------------------------------------------
+                                                    £ Le mode ordinateur.
+        . --------------------------------------------------------------------------------
+        -->
 
+        <nav id="mainNavbar" aria-label="Navbar ordinateur.">
+
+            <!--: Le logo de la navbar. -->
+            <img id="logoMainNavbar" class="logoTitreMainNavbar" src="img/logo.png" alt="">
+
+            <!--: Le titre la navbar. -->
+            <h1 class="logoTitreMainNavbar titreNavbar">Tempo life</h1>
+
+            <!--. --------------------La liste des liens principaux de la barre de navigation.-------------------- -->
+
+            <ul id="liensMainNavbar" class="navbar">
+
+                <li id="premierLienMainNavbar">
+                    <a href="#">
+                        <em class="fa-solid fa-house"></em>
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <em class="fa-solid fa-info"></em>
+                        Qui sommes nous ?
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <em class="fa-solid fa-pencil"></em>
+                        Actualité
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <em class="fa-solid fa-envelope"></em>
+                        Contacter-nous
+                    </a>
+                </li>
+
+            </ul>
+
+            <!--. --------------------Les éléments de la barre principal en mode mobile.-------------------- -->
+
+            <div class="navbar openSideNav">
+
+                <!--: Le bouton qui permet l'ouverture de la side nav. -->
+                <button id="ham" aria-label="Ouvrir side nav.">
+                    <em class="fa-solid fa-bars"></em>
+                </button>
+
+                <div id="logoTitreSideNav">
+
+                    <!--: Le logo de la barre de navigation en mode mobile. -->
+                    <img id="logoSideNavbar" src="img/logo.png" alt="">
+
+                    <!--: Le titre de la barre de navigation en mode mobile. -->
+                    <h1 class="titreNavbar">Tempo life</h1>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!--
+        . --------------------------------------------------------------------------------
+                                £ La barre de navigation pour les mobiles et tablette.
+        . --------------------------------------------------------------------------------
+        -->
+
+        <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical" aria-label="Navbar mobile.">
+
+            <!--: Le bouton "X" qui permet la fermeture de la side nav. -->
+            <button class="menuX" id="menuX" aria-label="Fermer side nav.">
+                <em class="fas fa-times fa-2x"></em>
+            </button>
+
+            <!--. --------------------Les liens de la side nav pour mobile.-------------------- -->
+
+            <div id="listeLienSideMenu">
+
+                <ul id="sideMenu1" class="liensSideMenu showSousMenu">
+
+                    <li>
+                        <a href="#" class="menuLink">
+                            <em class="fa-solid fa-house"></em>
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menuLink">
+                            <em class="fa-solid fa-info"></em>
+                            Qui sommes nous ?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menuLink">
+                            <em class="fa-solid fa-pencil"></em>
+                            Actualité
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="menuLink">
+                            <em class="fa-solid fa-envelope"></em>
+                            Contacter-nous
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
 
     </header>
 
     <main>
+
+        <div style="width: 100%; height: 80vh; background-color: rgb(255, 143, 152);">
+            <p style="font-size: 10vh;">
+                Accueil
+            </p>
+        </div>
+
+        <div style="width: 100%; height: 80vh; background-color: rgb(255, 255, 255);">
+        </div>
+
+        <div style="width: 100%; height: 80vh; background-color: rgb(206, 255, 160);">
+        </div>
 
     </main>
 
@@ -82,7 +226,10 @@
     : ************************************************************************************************************
     -->
 
-    <!--§ Mon js principal. -->
+    <!--§ Le fichier js de la navbar. -->
+    <script src="js/navBurger.js"></script>
+
+    <!--§ Le fichier js principal. -->
     <script src="js/scriptIndex.js"></script>
 
 </body>
