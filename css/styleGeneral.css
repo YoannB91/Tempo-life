@@ -4,6 +4,7 @@
 : ************************************************************************************************************
 */
 
+/*) Une réinitialisation CSS. */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,9 +24,10 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 
-/*) HTML5 display-role reset for older browsers */
+/*) Suppression de toute la mise en forme du HTML. */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -57,6 +59,17 @@ table {
 
 /*
 . --------------------------------------------------------------------------------
+                                £ Le scroll sur le site.
+. --------------------------------------------------------------------------------
+*/
+
+/*£ Réglage du comportement de défilement sur lisse. */
+html {
+	scroll-behavior: smooth;
+}
+
+/*
+. --------------------------------------------------------------------------------
                                 £ Définition des polices.
 . --------------------------------------------------------------------------------
 */
@@ -69,4 +82,51 @@ h1, h2, h3, h4 {
 /*£ Les textes. */
 p, a {
 	font-family: 'Jaldi', sans-serif;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définition des font-size.
+. --------------------------------------------------------------------------------
+*/
+
+/*µ Les titres secondaires. */
+h2 {
+	font-size: 7vh;
+}
+
+/*µ Les titres tertiaires. */
+h3 {
+	font-size: 3vh;
+}
+
+/*
+: ************************************************************************************************************
+                                    % Les classes générales.
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Colorisation des textes.
+. --------------------------------------------------------------------------------
+*/
+
+/*) Une classe CSS qui sera utilisée pour colorer le texte en blanc. */
+.couleurBlanche {
+	color: white;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ L'effet parallax.
+. --------------------------------------------------------------------------------
+*/
+
+/*? L'effet parallax pour les images. */
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

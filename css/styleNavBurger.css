@@ -61,7 +61,7 @@ header {
     list-style: none;
     margin-top: 0;
     width: 100%;
-    height: 15vh;
+    height: 12vh;
     display: inline-flex;
     align-items: center;
 }
@@ -245,20 +245,40 @@ header {
 
 /*
 . --------------------------------------------------------------------------------
+                                £ Je cible uniquement les mobiles.
+. --------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 600px) {
+
+    /*$ Réduction du logo de la side nav. */
+    #logoSideNavbar {
+        height: 75px;
+    }
+
+}
+
+/*
+. --------------------------------------------------------------------------------
                                 £ Je cible uniquement les tablettes
 . --------------------------------------------------------------------------------
 */
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
 
-    /*£ Éloignement du bouton burger du bord de l'écran. */
+    /*$ Éloignement du bouton burger du bord de l'écran. */
     #ham {
         margin-right: 15vw;
     }
 
-    /*£ Centrage de la liste des liens de la side nav. */
+    /*$ Centrage de la liste des liens de la side nav. */
     #listeLienSideMenu {
         padding-top: 20vh;
+    }
+
+    /*$ Réduction de la taille de la navbar. */
+    .navbar {
+        height: 10.5vh;
     }
 
 }
