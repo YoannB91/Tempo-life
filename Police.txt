@@ -1,5 +1,5 @@
 = Le logo : font-family: 'Ballet', cursive;
 
-= Les titres : font-family: 'Archivo Black', sans-serif;
+= Les titres : font-family: 'Hammersmith One', sans-serif;
 
 = Le texte : font-family: 'Jaldi', sans-serif;

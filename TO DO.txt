@@ -2,20 +2,6 @@
 
 Utiliser la fonction include du php pour inclure de façon dynamique des éléments comme la navbar et le footer ?
 
-= De manière générale :
-
-Gérer le letter-spacing et toutes ses conneries.
-
-= Les cours de musique proposé :
-
-Ajouter un démo musical ( sur ou sous l'image de la section. ).
-De préférence un son en lien avec l'instrument de l'image qui aura été choisi.
-
-Un petite animation qui fait tourner le cd lors de la lecture du son.
-Un classe font awesome existe pour cette animation de l'icone. Un simple if avec un classlist fera l'affaire.
-
-Créer une page avec du "Lorem Ipsum" pour le 'Découvrir'.
-
 = Les profs de musique :
 
 Quand on clique sur l'une des div elle vient se positionner au centre de l'écran et un texte de description de la personne apparait sous son portrait. Comme pour les images sur les sites de solution de super soluce par exemple.
@@ -36,7 +22,38 @@ Ajouter un padding entre les icônes et les liens de navigation.
 
 Ajouter une ancre en forme de note de musique en bas à droite de l'écran.
 
-= Fin du projet :
+La faire plus grande que le footer et lui ajouter un z-index inférieur au sien afin que sa partie inférieur passe en dessous du footer.
+
+
+<-------------------- La fin du projet. -------------------->
+
+Transformer les <p> de la barre des réseaux sociaux en <a>.
+
+Faire des favicons.
 
 Enlever les éléments innutiles du dossier IMG ( la maquette et le zonning ).
+Optimiser les images ( poids et taille ).
+
 Intégrer le projet au site Portfolio et l'ajouter dans les projets que j'ai réalisé.
+L'ajouter à mon cv ?
+
+<-------------------- Les autres pages -------------------->
+
+= Page tarif :
+
+Une page avec les tarifs, les différents cours ...
+
+Possibilité de l'ajouter dans la navbar.
+
+= Actualité : 
+
+Utiliser le système de calendrier mise en mémoire sur le chrome pros.
+
+= Qui sommes nous ?
+
+"Venez développé votre passion pour la musique et formez-vous aux métiers d'auteur, compositeur et/ou d’interprète.
+Chez Tempo life, nous accueillons avant tout des musiciens passionnées."
+
+La mettre la page en lien du "découvrir" des cours proposés de la page d'accueil.
+
+Y ajouter une description des cours.

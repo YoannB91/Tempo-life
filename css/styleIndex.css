@@ -74,6 +74,71 @@
 
 /*
 : ************************************************************************************************************
+										% Les cours de musique.
+: ************************************************************************************************************
+*/
+
+/*& Mise en forme de la section "Les cours de musique". */
+#courMusique {
+	display: flex;
+	margin: 5vh 3vw;
+}
+
+/*. --------------------La zone de texte.-------------------- */
+
+/*& Mise en forme de la zone de texte. */
+#presentationCour {
+	margin-right: 5vw;
+}
+
+/*& Modification de l'icône CD. */
+#cdCour {
+	font-size: 6vh;
+	color: #b7774a;
+}
+
+/*& Mise en forme du texte de la section "Les cours de musique". */
+#texteCour {
+	margin-bottom: 4vh;
+}
+
+/*& Mise en forme du lien vers une autre partie du site. */
+#lienCour {
+	background-color: #b7774a;
+	color: white;
+	font-size: 4vh;
+	padding: 0px 25px;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+/*& Mise en forme de l'icône de flèche qui pointe vers la droite. */
+#lienCour .fa-arrow-right {
+	font-size: 3vh;
+}
+
+/*. --------------------La zone d'illustration.-------------------- */
+
+/*& Mise en forme de l'image d'illustration de la section "Les cours de musique" */
+#imgCour {
+	width: 40vw;
+	border: 8px solid #b7774a;
+	border-radius: 8px;
+	box-shadow: 3px 3px 8px 2px #dfc0ae;
+}
+
+/*& Mise en forme de l'audio de démonstration de la section "Les cours de musique". */
+#audioCour{
+	width: 20vw;
+	background-color: orangered;
+	margin-top: 1.5vh;
+}
+
+
+
+
+/*
+: ************************************************************************************************************
 										% Les règles pour les mobiles et les tablettes.
 : ************************************************************************************************************
 */
@@ -139,4 +204,38 @@
 		padding-right: 25px;
 	}
 
+	/*. --------------------Les cours de musique.-------------------- */
+
+	/*$ Permet d'empiler les parties de la section. */
+	#courMusique {
+		display: block;
+	}
+
+	/*$ Rapprochement du texte et de l'icône du CD. */
+	#cdCour {
+		margin-right: -1.57vw;
+	}
+
+	/*$ Réduction de l'espace entre le bouton et le texte. */
+	#texteCour {
+		margin-bottom: 3vh;
+	}
+
+	/*$ Augmentation de l'espace entre le bouton et la section des illustrations. */
+	#illustrationCour {
+		margin-top: 5vh;
+	}
+
+	/*$ Restructuration de l'image. */
+	#imgCour {
+		width: 80vw;
+		border: 5px solid #b7774a;
+		border-radius: 4px;
+	}
+
+	/*$ Augmentation de la taille du lecteur audio. */
+	#audioCour {
+		width: 80vw;
+		margin-top: 2vh;
+	}
 }

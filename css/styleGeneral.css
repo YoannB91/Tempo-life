@@ -75,12 +75,12 @@ html {
 */
 
 /*£ Les titres. */
-h1, h2, h3, h4 {
-	font-family: 'Archivo Black', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 /*£ Les textes. */
-p, a {
+p, a, q {
 	font-family: 'Jaldi', sans-serif;
 }
 
@@ -90,14 +90,36 @@ p, a {
 . --------------------------------------------------------------------------------
 */
 
-/*µ Les titres secondaires. */
+/*. --------------------Les titres.-------------------- */
+
+/*µ Réglage de la taille des titres secondaires. */
 h2 {
 	font-size: 7vh;
 }
 
-/*µ Les titres tertiaires. */
+/*µ Réglage de la taille des titres tertiaires. */
 h3 {
+	font-size: 4vh;
+}
+
+/*. --------------------Les textes.-------------------- */
+
+/*µ Réglage de la taille des textes. */
+p, a, q {
 	font-size: 3vh;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définition des espacements.
+. --------------------------------------------------------------------------------
+*/
+
+/*& Définition de l'espacement des lettres, de la hauteur de ligne et de l'alignement du texte pour tous les éléments du site. */
+* {
+	letter-spacing: 2px;
+	line-height: 1.4;
+	text-align: justify;
 }
 
 /*
@@ -108,6 +130,17 @@ h3 {
 
 /*
 . --------------------------------------------------------------------------------
+                                £ L'alignement.
+. --------------------------------------------------------------------------------
+*/
+
+/*= Une classe CSS qui permet de centrer un élément. */
+.center {
+	text-align: center;
+}
+
+/*
+. --------------------------------------------------------------------------------
                                 £ Colorisation des textes.
 . --------------------------------------------------------------------------------
 */
@@ -115,6 +148,38 @@ h3 {
 /*) Une classe CSS qui sera utilisée pour colorer le texte en blanc. */
 .couleurBlanche {
 	color: white;
+}
+
+/*) Une classe CSS qui sera utilisée pour colorer le texte en orange. */
+.couleurOrange {
+	color: #b7774a;
+}
+
+/*) Définit la couleur d'arrière-plan de l'élément sur une nuance d'orange. */
+.backgroundColorShadeOfOrange {
+	background-color: #b7774a;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Les titres.
+. --------------------------------------------------------------------------------
+*/
+
+/*) Une classe CSS qui sera utilisé pour centrer les titres. */
+.titreCenter {
+	text-align: center; 
+	display: block ruby;
+}
+
+/*) Une classe CSS qui sera utilisé pour définir les propriétés d'une partie des titres. */
+.classeTitreNumeroUne {
+	color: white;
+	background-color: #b7774a;
+	width: fit-content;
+	padding: 18px 20px 22px 22px;
+	margin: 80px 80px 40px;
+	border-radius: 10px;
 }
 
 /*
@@ -129,4 +194,42 @@ h3 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+
+
+
+/*
+: ************************************************************************************************************
+										% Les règles pour les mobiles et les tablettes.
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Je cible les tablettes et les mobiles.
+. --------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-device-width: 1366px) {
+
+	/*$ Cette classe CSS permet de centrer des éléments en mode responsive. */
+	.centrageMobile {
+		margin-right: 5vw;
+		margin-left: 5vw;
+	}
+
+	/*. --------------------Les titres.-------------------- */
+
+	/*$ Le titre ne s'affiche pas totalement à l'écran en mode responsive. */
+	.titreCenter {
+		display: flex;
+	}
+
+	/*$ Recentrage du texte et augmentation des espaces autours. */
+	.classeTitreNumeroUne {
+		text-align: center;
+		margin: 6vh 5vw 4vh 5vw;
+	}
+
 }
