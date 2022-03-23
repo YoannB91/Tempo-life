@@ -91,8 +91,13 @@
 	margin-right: 5vw;
 }
 
+/*& Masque l'icône de CD de la version mobile. */
+#cdCourMobile {
+	display: none;
+}
+
 /*& Modification de l'icône CD. */
-#cdCour {
+.styleCDCour {
 	font-size: 6vh;
 	color: #b7774a;
 }
@@ -132,6 +137,52 @@
 	width: 20vw;
 	background-color: orangered;
 	margin-top: 1.5vh;
+}
+
+/*
+: ************************************************************************************************************
+										% Les professeurs.
+: ************************************************************************************************************
+*/
+
+.testImgProf {
+	height: 40vh;
+	/* border: 4px solid black; */
+	width: 20vw;
+}
+
+.testPProf {
+	width: 20vw;
+	background-color: white;
+	color: #b7774a;
+	text-align: center;
+	font-size: 4.5vh;
+	overflow: hidden;
+	margin-top: -7px;
+}
+
+#testProfOrdinateur em {
+	font-size: 8vh;
+	cursor: pointer;
+	align-self: center;
+}
+
+#testArrowLeft {
+	margin-right: 5vw;
+	margin-left: 3vw;
+}
+
+#testArrowRight {
+	margin-right: 3vw;
+}
+
+#testProfOrdinateur {
+	display: flex;
+	margin-top: 5vh;
+}
+
+.testBoxImgProf {
+	margin-right: 5vw;
 }
 
 
@@ -211,9 +262,27 @@
 		display: block;
 	}
 
-	/*$ Rapprochement du texte et de l'icône du CD. */
+	/*$ Réduction de l'espacement entre le titre et l'icône du CD. */
+	#courMusique {
+		margin: 3vh 3vw;
+	}
+
+	/*$ Disparition de l'icône du CD du paragraphe.  */
 	#cdCour {
-		margin-right: -1.57vw;
+		display: none;
+	}
+
+	/*$ Apparition de l'icône du CD de la version mobile de la page. */
+	#cdCourMobile {
+		display: block;
+		text-align: center;
+		margin-bottom: 3vh;
+	}
+
+	/*$ Augmentation de la taille du bouton et centrage du texte. */
+	#lienCour {
+		display: block;
+		text-align: center;
 	}
 
 	/*$ Réduction de l'espace entre le bouton et le texte. */
@@ -223,7 +292,7 @@
 
 	/*$ Augmentation de l'espace entre le bouton et la section des illustrations. */
 	#illustrationCour {
-		margin-top: 5vh;
+		margin-top: 4vh;
 	}
 
 	/*$ Restructuration de l'image. */

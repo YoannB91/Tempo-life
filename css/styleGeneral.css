@@ -32,9 +32,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -172,14 +169,25 @@ p, a, q {
 	display: block ruby;
 }
 
-/*) Une classe CSS qui sera utilisé pour définir les propriétés d'une partie des titres. */
-.classeTitreNumeroUne {
+/*) Une classe CSS qui sera utilisé pour définir les dimensions des titres. */
+.borderTitle {
+	padding: 2px 12px 2px 17px;
+	margin-top: 5vh;
+	margin-bottom: 2vh;
+	border-radius: 10px;
+}
+
+/*. --------------------La colorisation des titres.-------------------- */
+
+/*) Une classe CSS qui sera utilisée pour colorer le texte en blanc et le fond en orange. */
+.colorTitreUne {
 	color: white;
 	background-color: #b7774a;
-	width: fit-content;
-	padding: 18px 20px 22px 22px;
-	margin: 80px 80px 40px;
-	border-radius: 10px;
+}
+/*) Une classe CSS qui sera utilisée pour colorer le texte en orange et le fond en blanc. */
+.colorTitreDeux {
+	color: #b7774a;
+	background-color: white;
 }
 
 /*
@@ -213,6 +221,31 @@ p, a, q {
 
 @media only screen and (max-device-width: 1366px) {
 
+	/*
+	: ************************************************************************************************************
+										% Les règles générales.
+	: ************************************************************************************************************
+	*/
+
+	/*
+	. --------------------------------------------------------------------------------
+									£ Définition des font-size.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*. --------------------Les titres.-------------------- */
+
+	/*µ Réduction de la taille des titres secondaires. */
+	h2 {
+		font-size: 5vh;
+	}
+
+	/*
+	: ************************************************************************************************************
+										% Les classes générales.
+	: ************************************************************************************************************
+	*/
+
 	/*$ Cette classe CSS permet de centrer des éléments en mode responsive. */
 	.centrageMobile {
 		margin-right: 5vw;
@@ -227,9 +260,9 @@ p, a, q {
 	}
 
 	/*$ Recentrage du texte et augmentation des espaces autours. */
-	.classeTitreNumeroUne {
+	.borderTitle {
 		text-align: center;
-		margin: 6vh 5vw 4vh 5vw;
+		margin: 5vh 5vw 3vh;
 	}
 
 }

@@ -4,7 +4,7 @@ Utiliser la fonction include du php pour inclure de façon dynamique des éléme
 
 = Les profs de musique :
 
-Quand on clique sur l'une des div elle vient se positionner au centre de l'écran et un texte de description de la personne apparait sous son portrait. Comme pour les images sur les sites de solution de super soluce par exemple.
+Quand on clique sur l'une des div elle vient se positionner au centre de l'écran et un texte de description de la personne apparait sous son portrait. Comme pour les images sur les sites de solution ( super soluce par exemple ).
 
 Ajouter des flèches à gauche et à droite pour naviguer entre les différents profs.
 
@@ -26,6 +26,11 @@ La faire plus grande que le footer et lui ajouter un z-index inférieur au sien 
 
 
 <-------------------- La fin du projet. -------------------->
+
+Vérifier le projet sur d'autres naviguateur ( il semble cassé sur chrome ).
+
+Séparer les codes CSS pour mobile et tablette afin d'optimiser le chargement sur ordinateur.
+<link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)"> <!-- non bloquant sur grand écran -->
 
 Transformer les <p> de la barre des réseaux sociaux en <a>.
 
