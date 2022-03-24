@@ -39,18 +39,18 @@ header {
 
 /*£ Modification du logo de la main nav. */
 #logoMainNavbar {
-    height: 80px;
+    height: 75px;
     padding-left: 50px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    align-self: baseline;
 }
 
 /*£ Modification du titre de la main nav. */
 .titreNavbar {
     display: block ruby;
     font-family: 'Ballet', cursive;
-    font-size: 4.5vh;
-    padding: 10px 20px 10px 5px;
+    font-size: 3vh;
+    padding: 10px 20px 10px 10px;
 }
 
 /*£ Customisation de la navbar. */

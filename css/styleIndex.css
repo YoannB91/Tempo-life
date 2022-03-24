@@ -147,7 +147,6 @@
 
 .testImgProf {
 	height: 40vh;
-	/* border: 4px solid black; */
 	width: 20vw;
 }
 
@@ -185,6 +184,10 @@
 	margin-right: 5vw;
 }
 
+#testBoxImgProfMobile {
+	display: none;
+}
+
 
 
 
@@ -216,6 +219,15 @@
 		font-size: 6vh;
 	}
 
+	/*. --------------------Les professeurs.-------------------- */
+
+	.testImgProf {
+		width: 60vw;
+	}
+
+	.testPProf {
+		width: 60vw;
+	}
 }
 
 /*
@@ -238,6 +250,23 @@
 		font-size: 5vh;
 	}
 
+	/*. --------------------Les professeurs.-------------------- */
+
+	.testImgProf {
+		width: 42vw;
+	}
+
+	#testProfOrdinateur em {
+		font-size: 7vh;
+	}
+
+	#testArrowLeft {
+		margin-right: 0;
+	}
+
+	.testPProf {
+		width: 42vw;
+	}
 }
 
 /*
@@ -306,5 +335,27 @@
 	#audioCour {
 		width: 80vw;
 		margin-top: 2vh;
+	}
+
+	/*. --------------------Les professeurs.-------------------- */
+
+	#testBoxImgProfMobile {
+		display: block;
+	}
+
+	.testBoxImgProf {
+		display: none;
+	}
+
+	#testProfOrdinateur em {
+		font-size: 5vh;
+	}
+
+	.testImgProf {
+		height: 30vh;
+	}
+
+	.titreMobileProf {
+		margin: 0 auto;
 	}
 }

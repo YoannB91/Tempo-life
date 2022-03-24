@@ -1,4 +1,4 @@
-= Le logo : font-family: 'Ballet', cursive;
+= Le logo : font-family: 'Marck Script', cursive;
 
 = Les titres : font-family: 'Hammersmith One', sans-serif;
 
