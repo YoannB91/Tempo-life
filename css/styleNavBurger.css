@@ -109,8 +109,14 @@ header {
 
 /*£ L'icône du menu burger. */
 #ham {
+<<<<<<< HEAD
     margin-left: 5vw;
     font-size: 4vh;
+=======
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 5vh;
+>>>>>>> parent of d64a062 (Les cours de musique.)
 }
 
 /*£ Centrage du titre et du logo de la side nav. */

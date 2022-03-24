@@ -72,12 +72,12 @@ html {
 */
 
 /*£ Les titres. */
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Hammersmith One', sans-serif;
+h1, h2, h3, h4 {
+	font-family: 'Archivo Black', sans-serif;
 }
 
 /*£ Les textes. */
-p, a, q {
+p, a {
 	font-family: 'Jaldi', sans-serif;
 }
 
@@ -87,36 +87,14 @@ p, a, q {
 . --------------------------------------------------------------------------------
 */
 
-/*. --------------------Les titres.-------------------- */
-
-/*µ Réglage de la taille des titres secondaires. */
+/*µ Les titres secondaires. */
 h2 {
 	font-size: 7vh;
 }
 
-/*µ Réglage de la taille des titres tertiaires. */
+/*µ Les titres tertiaires. */
 h3 {
-	font-size: 4vh;
-}
-
-/*. --------------------Les textes.-------------------- */
-
-/*µ Réglage de la taille des textes. */
-p, a, q {
 	font-size: 3vh;
-}
-
-/*
-. --------------------------------------------------------------------------------
-                                £ Définition des espacements.
-. --------------------------------------------------------------------------------
-*/
-
-/*& Définition de l'espacement des lettres, de la hauteur de ligne et de l'alignement du texte pour tous les éléments du site. */
-* {
-	letter-spacing: 2px;
-	line-height: 1.4;
-	text-align: justify;
 }
 
 /*
@@ -124,17 +102,6 @@ p, a, q {
                                     % Les classes générales.
 : ************************************************************************************************************
 */
-
-/*
-. --------------------------------------------------------------------------------
-                                £ L'alignement.
-. --------------------------------------------------------------------------------
-*/
-
-/*= Une classe CSS qui permet de centrer un élément. */
-.center {
-	text-align: center;
-}
 
 /*
 . --------------------------------------------------------------------------------
@@ -147,6 +114,7 @@ p, a, q {
 	color: white;
 }
 
+<<<<<<< HEAD
 /*) Une classe CSS qui sera utilisée pour colorer le texte en orange. */
 .couleurOrange {
 	color: #b7774a;
@@ -190,6 +158,8 @@ p, a, q {
 	background-color: white;
 }
 
+=======
+>>>>>>> parent of d64a062 (Les cours de musique.)
 /*
 . --------------------------------------------------------------------------------
                                 £ L'effet parallax.
@@ -202,6 +172,7 @@ p, a, q {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+<<<<<<< HEAD
 }
 
 
@@ -265,4 +236,6 @@ p, a, q {
 		margin: 5vh 5vw 3vh;
 	}
 
+=======
+>>>>>>> parent of d64a062 (Les cours de musique.)
 }
