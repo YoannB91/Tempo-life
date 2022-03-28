@@ -72,12 +72,12 @@ html {
 */
 
 /*£ Les titres. */
-h1, h2, h3, h4 {
-	font-family: 'Archivo Black', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 /*£ Les textes. */
-p, a {
+p, a, q {
 	font-family: 'Jaldi', sans-serif;
 }
 
@@ -87,14 +87,36 @@ p, a {
 . --------------------------------------------------------------------------------
 */
 
-/*µ Les titres secondaires. */
+/*. --------------------Les titres.-------------------- */
+
+/*µ Réglage de la taille des titres secondaires. */
 h2 {
 	font-size: 7vh;
 }
 
-/*µ Les titres tertiaires. */
+/*µ Réglage de la taille des titres tertiaires. */
 h3 {
+	font-size: 4vh;
+}
+
+/*. --------------------Les textes.-------------------- */
+
+/*µ Réglage de la taille des textes. */
+p, a, q {
 	font-size: 3vh;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définition des espacements.
+. --------------------------------------------------------------------------------
+*/
+
+/*& Définition de l'espacement des lettres, de la hauteur de ligne et de l'alignement du texte pour tous les éléments du site. */
+* {
+	letter-spacing: 2px;
+	line-height: 1.4;
+	text-align: justify;
 }
 
 /*
@@ -102,6 +124,17 @@ h3 {
                                     % Les classes générales.
 : ************************************************************************************************************
 */
+
+/*
+. --------------------------------------------------------------------------------
+                                £ L'alignement.
+. --------------------------------------------------------------------------------
+*/
+
+/*= Une classe CSS qui permet de centrer un élément. */
+.center {
+	text-align: center;
+}
 
 /*
 . --------------------------------------------------------------------------------
@@ -114,7 +147,6 @@ h3 {
 	color: white;
 }
 
-<<<<<<< HEAD
 /*) Une classe CSS qui sera utilisée pour colorer le texte en orange. */
 .couleurOrange {
 	color: #b7774a;
@@ -158,8 +190,6 @@ h3 {
 	background-color: white;
 }
 
-=======
->>>>>>> parent of d64a062 (Les cours de musique.)
 /*
 . --------------------------------------------------------------------------------
                                 £ L'effet parallax.
@@ -172,7 +202,6 @@ h3 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-<<<<<<< HEAD
 }
 
 
@@ -211,6 +240,10 @@ h3 {
 		font-size: 5vh;
 	}
 
+	h3 {
+		font-size: 3.5vh;
+	}
+
 	/*
 	: ************************************************************************************************************
 										% Les classes générales.
@@ -233,9 +266,9 @@ h3 {
 	/*$ Recentrage du texte et augmentation des espaces autours. */
 	.borderTitle {
 		text-align: center;
-		margin: 5vh 5vw 3vh;
+		margin: 3vh 5vw 2vh;
+		padding: 0 6px;
+		border-radius: 6px;
 	}
 
-=======
->>>>>>> parent of d64a062 (Les cours de musique.)
 }

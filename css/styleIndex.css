@@ -145,47 +145,75 @@
 : ************************************************************************************************************
 */
 
-.testImgProf {
+/*. --------------------Les cadres photos.-------------------- */
+
+/*- Centrage des cadres. */
+#alignementCadre {
+	display: flex; 
+	margin: 0 auto;
+}
+
+/*- Création d'un espace à droite des cadres des photos des professeurs. */
+.emplacementCadreProf {
+	margin-right: 5vw;
+}
+
+/*- Réglage de la hauteur et de la largeur des photos. */
+.photoProf {
 	height: 40vh;
 	width: 20vw;
 }
 
-.testPProf {
+/*- Le code CSS du panneau qui contient le nom du professeur sous sa photo. */
+.panneauProf {
 	width: 20vw;
 	background-color: white;
 	color: #b7774a;
 	text-align: center;
 	font-size: 4.5vh;
+	font-weight: bold;
 	overflow: hidden;
 	margin-top: -7px;
 }
 
-#testProfOrdinateur em {
+/*- Disparition du cadre mobile sur ordinateur. */
+#emplacementCadreProfMobile {
+	display: none;
+}
+
+/*. --------------------Le carousel.-------------------- */
+
+/*- Le code CSS pour le carousel des professeurs. */
+#carouselProf {
+	display: flex;
+	margin-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+/*- Le code CSS des flèches du carousel des professeurs. */
+#carouselProf em {
 	font-size: 8vh;
 	cursor: pointer;
 	align-self: center;
 }
 
-#testArrowLeft {
+/*- Le code CSS de la flèche gauche du carousel des professeurs. */
+#flecheGaucheProf {
 	margin-right: 5vw;
 	margin-left: 3vw;
 }
 
-#testArrowRight {
+/*- Le code CSS de la flèche gauche du carousel des professeurs. */
+#flecheDroiteProf {
 	margin-right: 3vw;
 }
 
-#testProfOrdinateur {
-	display: flex;
-	margin-top: 5vh;
-}
+/*. --------------------L'animation.-------------------- */
 
-.testBoxImgProf {
-	margin-right: 5vw;
-}
-
-#testBoxImgProfMobile {
-	display: none;
+/*- Une règle CSS qui agrandit la photo d'un enseignant lorsque l'utilisateur passe la souris dessus. */
+.photoProf:hover {
+	transition: transform 1s ease-in-out;
+	transform: scale(1.5);
 }
 
 
@@ -207,26 +235,29 @@
 
 	/*. --------------------La barre des réseaux sociaux.-------------------- */
 
-	/*$ Réduction de l'espace entre les icônes. */
+	/*è Réduction de l'espace entre les icônes. */
 	#socialBarHeader em {
 		padding-left: 18px;
 	}
 
 	/*. --------------------L'accueil.-------------------- */
 
-	/*$ Réduction de la taille du titre de l'accueil. */
+	/*è Réduction de la taille du titre de l'accueil. */
 	#accueil h2 {
 		font-size: 6vh;
 	}
 
 	/*. --------------------Les professeurs.-------------------- */
 
-	.testImgProf {
-		width: 60vw;
+	/*è Réduction de la taille de la photo qui apparaît pour les mobiles. */
+	.photoProf {
+		height: 225px;
+		width: 225px;
 	}
 
-	.testPProf {
-		width: 60vw;
+	/*è Réduction de la taille du cadre qui apparaît pour les mobiles. */
+	.panneauProf {
+		width: 225px;
 	}
 }
 
@@ -252,20 +283,30 @@
 
 	/*. --------------------Les professeurs.-------------------- */
 
-	.testImgProf {
-		width: 42vw;
+	/*$ Réduction de la taille de la photo pour les tablettes. */
+	.photoProf {
+		height: 400px;
+		width: 400px;
 	}
 
-	#testProfOrdinateur em {
+	/*$ Réduction de la taille du cadre pour les tablettes. */
+	.panneauProf {
+		width: 400px;
+	}
+
+	/*$ Réduction de la taille des flèches pour les tablettes. */
+	#carouselProf em {
 		font-size: 7vh;
 	}
 
-	#testArrowLeft {
-		margin-right: 0;
+	/*$ Éloignement du bord de l'écran de la flèche gauche du carousel pour les tablettes. */
+	#flecheGaucheProf {
+		margin-left: 5vw;
 	}
 
-	.testPProf {
-		width: 42vw;
+	/*$ Éloignement du bord de l'écran de la flèche droite du carousel pour les tablettes. */
+	#flecheDroiteProf {
+		margin-right: 5vw;
 	}
 }
 
@@ -279,59 +320,69 @@
 
 	/*. --------------------La barre des réseaux sociaux.-------------------- */
 
-	/*$ Réduction de l'espace entre la dernière icône et le bord de l'écran. */
+	/*é Réduction de la taille des la barre des réseaux sociaux en mode responsive. */
+	#socialBarHeader {
+		height: 4vh;
+	}
+
+	/*é Réduction de l'espace entre la dernière icône et le bord de l'écran. */
 	#socialBarHeader .fa-google {
 		padding-right: 25px;
 	}
 
 	/*. --------------------Les cours de musique.-------------------- */
 
-	/*$ Permet d'empiler les parties de la section. */
+	/*é Permet d'empiler les parties de la section. */
 	#courMusique {
 		display: block;
 	}
 
-	/*$ Réduction de l'espacement entre le titre et l'icône du CD. */
+	/*é Réduction de l'espacement entre le titre et l'icône du CD. */
 	#courMusique {
 		margin: 3vh 3vw;
 	}
 
-	/*$ Disparition de l'icône du CD du paragraphe.  */
+	/*é Disparition de l'icône du CD du paragraphe.  */
 	#cdCour {
 		display: none;
 	}
 
-	/*$ Apparition de l'icône du CD de la version mobile de la page. */
+	/*é Apparition de l'icône du CD de la version mobile de la page. */
 	#cdCourMobile {
 		display: block;
 		text-align: center;
 		margin-bottom: 3vh;
 	}
 
-	/*$ Augmentation de la taille du bouton et centrage du texte. */
+	/*é Augmentation de la taille du bouton et centrage du texte. */
 	#lienCour {
 		display: block;
 		text-align: center;
 	}
 
-	/*$ Réduction de l'espace entre le bouton et le texte. */
+	/*é Réduction de l'espace entre le bouton et le texte. */
 	#texteCour {
 		margin-bottom: 3vh;
 	}
 
-	/*$ Augmentation de l'espace entre le bouton et la section des illustrations. */
-	#illustrationCour {
-		margin-top: 4vh;
+	/*é Réduction de la taille du lien. */
+	#lienCour {
+		font-size: 3.5vh;
 	}
 
-	/*$ Restructuration de l'image. */
+	/*é Augmentation de l'espace entre le bouton et la section des illustrations. */
+	#illustrationCour {
+		margin-top: 3vh;
+	}
+
+	/*é Restructuration de l'image. */
 	#imgCour {
 		width: 80vw;
 		border: 5px solid #b7774a;
 		border-radius: 4px;
 	}
 
-	/*$ Augmentation de la taille du lecteur audio. */
+	/*é Augmentation de la taille du lecteur audio. */
 	#audioCour {
 		width: 80vw;
 		margin-top: 2vh;
@@ -339,23 +390,39 @@
 
 	/*. --------------------Les professeurs.-------------------- */
 
-	#testBoxImgProfMobile {
-		display: block;
-	}
-
-	.testBoxImgProf {
+	/*é Disparition des cadres du mode ordinateur. */
+	.emplacementCadreProf {
 		display: none;
 	}
 
-	#testProfOrdinateur em {
+	/*é Apparition du cadre du mode responsive.  */
+	#emplacementCadreProfMobile {
+		display: block;
+	}
+
+	/*é Centrage du titre en mode responsive. */
+	#titreMobileProf {
+		margin: 3vh auto 2vh;
+	}
+
+	/*é Réduction de la taille du texte des panneaux en mode responsive. */
+	.panneauProf {
+		font-size: 3.5vh;
+	}
+
+	/*é Ajout de marges autour du carousel en mode responsive. */
+	#carouselProf {
+		margin-top: 3vh;
+		padding-bottom: 3vh;
+	}
+
+	/*é Réduction de la taille des flèches du carousel en mode responsive. */
+	#carouselProf em {
 		font-size: 5vh;
 	}
 
-	.testImgProf {
-		height: 30vh;
-	}
-
-	.titreMobileProf {
-		margin: 0 auto;
+	/*é Cette marge empêche le centrage du cadre en mode responsive. */
+	#flecheGaucheProf {
+		margin-right: 0;
 	}
 }

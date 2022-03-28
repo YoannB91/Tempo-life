@@ -18,12 +18,12 @@
     <!--+ J'importe mes polices via google fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ballet&family=Jaldi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Hammersmith+One&family=Jaldi&display=swap" rel="stylesheet">
 
     <!--$ Les fichiers css. -->
 
     <!--£ Les icônes de font-awesome. -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--£ Le fichier CSS des règles générales. -->
     <link rel="stylesheet" href="css/styleGeneral.css">
@@ -77,7 +77,7 @@
         <nav id="mainNavbar" aria-label="Navbar ordinateur.">
 
             <!--: Le logo de la navbar. -->
-            <img id="logoMainNavbar" class="logoTitreMainNavbar" src="img/navbar/logo.png" alt="C'est un homme portant un t-shirt de couleur banana mania. Il joue de la guitare et l'on peut voir trois deux doubles-croches s'envoler au dessus de lui.">
+            <img id="logoMainNavbar" class="logoTitreMainNavbar" src="img/navbar/logo.png" title="Tempo life, la passion de la musique avant tout." alt="C'est un homme portant un t-shirt de couleur banana mania. Il joue de la guitare et l'on peut voir trois deux doubles-croches s'envoler au dessus de lui." loading="lazy">
 
             <!--: Le titre la navbar. -->
             <h1 class="logoTitreMainNavbar titreNavbar">Tempo life</h1>
@@ -87,7 +87,7 @@
             <ul id="liensMainNavbar" class="navbar">
 
                 <li id="premierLienMainNavbar">
-                    <a href="#">
+                    <a href="index.html">
                         <em class="fa-solid fa-house"></em>
                         Accueil
                     </a>
@@ -128,7 +128,7 @@
                 <div id="logoTitreSideNav">
 
                     <!--: Le logo de la barre de navigation en mode mobile. -->
-                    <img id="logoSideNavbar" src="img/navbar/logo.png" alt="C'est un homme portant un t-shirt de couleur banana mania. Il joue de la guitare et l'on peut voir trois deux doubles-croches s'envoler au dessus de lui.">
+                    <img id="logoSideNavbar" src="img/navbar/logo.png" title="Tempo life, la passion de la musique avant tout." alt="C'est un homme portant un t-shirt de couleur banana mania. Il joue de la guitare et l'on peut voir trois deux doubles-croches s'envoler au dessus de lui." loading="lazy">
 
                     <!--: Le titre de la barre de navigation en mode mobile. -->
                     <h1 class="titreNavbar">Tempo life</h1>
@@ -159,7 +159,7 @@
                 <ul id="sideMenu1" class="liensSideMenu showSousMenu">
 
                     <li>
-                        <a href="#" class="menuLink">
+                        <a href="index.html" class="menuLink">
                             <em class="fa-solid fa-house"></em>
                             Accueil
                         </a>
@@ -208,7 +208,7 @@
             <h2 class="couleurBlanche">La Musique À Tout Instant</h2>
 
             <!--. --------------------Le lien pour descendre sur le site.-------------------- -->
-            <a href="#">
+            <a href="#introCoursMusique">
                 <p class="couleurBlanche">En savoir plus</p>
                 <em class="fa-solid fa-chevron-down couleurBlanche"></em>
             </a>
@@ -221,36 +221,21 @@
         : ************************************************************************************************************
         -->
 
-        <section>
+        <div class="titreCenter">
 
-<<<<<<< HEAD
         <!--. --------------------Le titre.-------------------- -->
         <h2 id="introCoursMusique" class="borderTitle colorTitreUne">Les cours de musique proposés</h2>
-=======
-            <!--. --------------------Le titre.-------------------- -->
-            <h2 class="couleurBlanche">Les cours de musique proposés</h2>
 
-            <!--. --------------------Le sous-titre.-------------------- -->
-            <h3></h3>
+        </div>
 
-            <article>
+        <!--. --------------------Le sous-titre.-------------------- -->
+        <h3 class="titreCenter centrageMobile couleurOrange">Des cours de guitare, de batterie, de violon et de piano.</h3>
 
-                <p>texte</p>
+        <section id="courMusique">
 
-                <a href="">lien</a>
+            <!--. --------------------Le texte.-------------------- -->
+            <section id="presentationCour" class="centrageMobile">
 
-                <img src="img/" alt="">
-
-            </article>
-
-        </section>
->>>>>>> parent of d64a062 (Les cours de musique.)
-
-
-
-
-
-<<<<<<< HEAD
                 <!--. --------------------Une icône de CD pour les mobiles.-------------------- -->
                 <em id="cdCourMobile" class="fa-solid fa-compact-disc fa-light styleCDCour"></em>
 
@@ -262,15 +247,29 @@
                     <br />
                     Ces classes offrent tout au longs de l'année scolaire aux étudiants un enseignement technique des instruments, du chant, des temps de partage et des évènements où sont conviés familles et amis des participants.
                 </p>
-=======
->>>>>>> parent of d64a062 (Les cours de musique.)
 
+                <!--. --------------------Le lien vers une page plus précise.-------------------- -->
+                <a href="#" id="lienCour">
+                    Découvrir <em class="fa-solid fa-arrow-right"></em>
+                </a>
 
+            </section>
 
+            <!--. --------------------Les illustrations.-------------------- -->
+            <section id="illustrationCour" class="center centrageMobile">
 
+                <!--. --------------------L'image d'illustration.-------------------- -->
+                <img id="imgCour" src="img/accueil/guitare_accueil.jpg" title="Les cours de guitare." alt="Un homme portant une veste en cuir noire et un jean bleu joue un air sur une guitare Hofner" loading="lazy">
 
+                <!--. --------------------L'audio de démonstration.-------------------- -->
+                <audio id="audioCour" src="sons/accueil/demo_guitare.mp3" controls preload="metadata" title="Extrait d'un morceau de guitare joué par l'un de nos élèves de première année." loading="lazy" aria-label="Lire un extrait d'un morceau de guitare.">
+                    Votre navigateur ne prend pas en charge l'audio HTML5. 
+                    Voici un <a href="myAudio.mp3">lien vers le fichier audio</a> à la place.
+                </audio>
 
+            </section>
 
+        </section>
 
         <!--
         : ************************************************************************************************************
@@ -278,61 +277,71 @@
         : ************************************************************************************************************
         -->
 
-        <section style="height: 80vh; background-color: #b7774a;">
+        <section class="backgroundColorShadeOfOrange">
 
             <div class="titreCenter">
 
                 <!--. --------------------Le titre.-------------------- -->
-                <h2 id="introCoursMusique" class="borderTitle colorTitreDeux titreMobileProf">Les professeurs</h2>
+                <h2 id="titreMobileProf" class="borderTitle colorTitreDeux">Les professeurs</h2>
 
             </div>
 
             <!--. --------------------Le sous-titre.-------------------- -->
             <h3 class="titreCenter centrageMobile couleurBlanche">Nos professeurs et intervenants.</h3>
 
-            <section id="testProfOrdinateur">
+            <!--
+            . --------------------------------------------------------------------------------
+                                    £ Les emplacements pour les photos des professeurs.
+            . --------------------------------------------------------------------------------
+            -->
 
-                <em id="testArrowLeft" class="fa-solid fa-arrow-left-long"></em>
+            <section id="carouselProf">
 
-                <div style="display: flex;margin: 0 auto;">
+                <!--. --------------------La flèche de gauche.-------------------- -->
+                <em id="flecheGaucheProf" class="fa-solid fa-arrow-left-long" aria-label="Faire défiler les photos."></em>
 
-                    <div class="testBoxImgProf">
+                <div id="alignementCadre">
 
-                        <img id="cadrePhotoProf1" src="img/profs/1.jpg" alt="" class="testImgProf">
+                    <!--. --------------------Le premier emplacement.-------------------- -->
+                    <div class="emplacementCadreProf">
 
-                        <p id="panneauProf1" class="testPProf">Mélodie Babin</p>
+                        <img id="cadrePhotoProf1" class="photoProf" src="img/profs/1.jpg" title="Mélodie Babin, professeur de chant." alt="Photo d'une jeune femme blonde souriante, ses yeux sont de couleur bleus. Son sourire laisse apparaître un creux au niveau de ses joues. Elle à une petite cicatrice au niveau de l'œil droit, et des cernes peu profonde sont creusés sous ses yeux.">
 
-                    </div>
-
-                    <div class="testBoxImgProf">
-
-                        <img id="cadrePhotoProf2" src="img/profs/2.jpg" alt="" class="testImgProf">
-
-                        <p id="panneauProf2" class="testPProf">Brice ruel</p>
-
-                    </div>
-
-                    <div class="testBoxImgProf">
-
-                        <img id="cadrePhotoProf3" src="img/profs/3.jpg" alt="" class="testImgProf">
-                        <p id="panneauProf3" class="testPProf">Charlotte Jobin</p>
+                        <p id="panneauProf1" class="panneauProf">Mélodie Babin</p>
 
                     </div>
 
-                    <div id="testBoxImgProfMobile">
+                    <!--. --------------------Le second emplacement.-------------------- -->
+                    <div class="emplacementCadreProf">
 
-                        <img id="cadrePhotoProfMobile" src="img/profs/1.jpg" alt="" class="testImgProf">
-                        <p id="panneauProf3" class="testPProf">Charlotte Jobin</p>
+                        <img id="cadrePhotoProf2" class="photoProf" src="img/profs/2.jpg" title="Bruce ruel, professeur de guitare acoustique." alt="Photo d'un homme noire d'âge mûre souriant, ses yeux sont de couleur marrons. Ses cheveux sont de couleur noire grisonnante, sa barbe est quand à elle grise. Il porte une boucle d'oreille tombante sur son oreille gauche.">
+
+                        <p id="panneauProf2" class="panneauProf">Bruce ruel</p>
+
+                    </div>
+
+                    <!--. --------------------Le troisième emplacement.-------------------- -->
+                    <div class="emplacementCadreProf">
+
+                        <img id="cadrePhotoProf3" class="photoProf" src="img/profs/3.jpg" title="Charlotte Jobin, professeur de batterie." alt="Photo d'une jeune femme souriante aux cheveux châtains foncés, ses yeux sont de couleur marron. Son grand sourire laisse apparaître une rangée de dents blanches et un creux au niveau de ses joues. Elle porte une paire de boucle d'oreille et son t-shirt est de couleur bleu foncé.">
+                        <p id="panneauProf3" class="panneauProf">Charlotte Jobin</p>
+
+                    </div>
+
+                    <!--. --------------------L'emplacement pour les mobiles.-------------------- -->
+                    <div id="emplacementCadreProfMobile">
+
+                        <img id="cadrePhotoProfMobile" class="photoProf" src="img/profs/1.jpg" title="Mélodie Babin, professeur de chant." alt="Photo d'une jeune femme blonde souriante, ses yeux sont de couleur bleus. Son sourire laisse apparaître un creux au niveau de ses joues. Elle à une petite cicatrice au niveau de l'œil droit, et des cernes peu profonde sont creusés sous ses yeux.">
+                        <p id="panneauProfMobile" class="panneauProf">Mélodie Babin</p>
 
                     </div>
 
                 </div>
 
-                <em id="testArrowRight" class="fa-solid fa-arrow-right-long"></em>
+                <!--. --------------------La flèche de droite.-------------------- -->
+                <em id="flecheDroiteProf" class="fa-solid fa-arrow-right-long" aria-label="Faire défiler les photos."></em>
 
             </section>
-
-
 
         </section>
 

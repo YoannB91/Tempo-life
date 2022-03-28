@@ -13,6 +13,10 @@ La navbar : #D68545
 
 Le corps de la page.
 
+Le fond des titres : #b7774a
+
 Les titres  : #b7774a
+
+Les sous-titres : #b7774a
 
 Le footer : #432918
