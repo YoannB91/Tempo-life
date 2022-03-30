@@ -50,6 +50,7 @@
 
 /*= Le titre de l'accueil. */
 #accueil h2 {
+	font-family: 'Dancing Script', cursive;
 	font-size: 10vh;
 	padding-bottom: 100px;
 	text-align: center;
@@ -193,6 +194,7 @@
 /*- Le code CSS des flèches du carousel des professeurs. */
 #carouselProf em {
 	font-size: 8vh;
+	color: white;
 	cursor: pointer;
 	align-self: center;
 }
@@ -214,6 +216,45 @@
 .photoProf:hover {
 	transition: transform 1s ease-in-out;
 	transform: scale(1.5);
+}
+
+/*
+: ************************************************************************************************************
+										% Les témoignages.
+: ************************************************************************************************************
+*/
+
+/*é Les témoignages doivent être alignés. */
+#temoignages {
+	display: flex;
+}
+
+/*é Customisation des témoignages. */
+.temoignage {
+	background-color: #fefefe;
+	width: 30vw;
+	border: 0.5px solid #b7774a;
+	border-radius: 10px;
+	box-shadow: 0 0 16px 8px #dfc0ae;
+	margin: 5vh 2vw;
+}
+
+/*é Les éléments des en-têtes des témoignages doivent être alignés. */
+.enTeteTemoignage {
+	display: flex;
+}
+
+/*é Customisation du logo des témoignages. */
+.logoTemoignage {
+	font-size: 5vh;
+	font-weight: bold;
+	text-align: center;
+	background-color: #b7774a;
+	color: white;
+	width: 7vh;
+	height: 7vh;
+	border-radius: 50px;
+	margin: 1vh 1vw;
 }
 
 

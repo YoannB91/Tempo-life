@@ -37,6 +37,7 @@ var socialBar = document.getElementById('socialBarHeader');
 . --------------------------------------------------------------------------------
 */
 
+//+ Une fonction JavaScript appelée lorsque l'utilisateur clique sur l'icône du hamburger.
 boutonMenuHamburger.addEventListener('click', function showMenuVertical() {
     cacherElementMenuVertical.classList.replace('hideMenuVertical', 'showMenuVertical');
     mainNavbar.style.display = "none";
@@ -49,6 +50,7 @@ boutonMenuHamburger.addEventListener('click', function showMenuVertical() {
 . --------------------------------------------------------------------------------
 */
 
+//+ Une fonction JavaScript appelée lorsque l'utilisateur clique sur le bouton X.
 boutonX.addEventListener('click', function hideMenuVertical() {
     cacherElementMenuVertical.classList.replace('showMenuVertical', 'hideMenuVertical');
     mainNavbar.style.display = "inline-flex";
@@ -61,6 +63,7 @@ boutonX.addEventListener('click', function hideMenuVertical() {
 . --------------------------------------------------------------------------------
 */
 
+//+ Une boucle qui itère sur le tableau menuLink et ajoute un écouteur d'événement à chaque élément.
 for (var i = 0; i < menuLink.length; i++) {
     menuLink[i].addEventListener('click', function hideMenuVertical() {
         cacherElementMenuVertical.classList.replace('showMenuVertical', 'hideMenuVertical');

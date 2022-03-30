@@ -1,5 +1,7 @@
-= Le logo : font-family: 'Marck Script', cursive;
+= Le logo : font-family: 'Cookie', cursive;
 
-= Les titres : font-family: 'Hammersmith One', sans-serif;
+= Les titres : font-family: 'Slabo 27px', serif;
+
+= Les sous-titres : font-family: 'Dancing Script', cursive;
 
 = Le texte : font-family: 'Jaldi', sans-serif;

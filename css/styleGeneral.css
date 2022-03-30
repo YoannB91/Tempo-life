@@ -72,8 +72,14 @@ html {
 */
 
 /*£ Les titres. */
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Hammersmith One', sans-serif;
+
+h2 {
+	font-family: 'Slabo 27px', serif;
+	font-weight: bold;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Dancing Script', cursive;
 }
 
 /*£ Les textes. */
@@ -171,7 +177,7 @@ p, a, q {
 
 /*) Une classe CSS qui sera utilisé pour définir les dimensions des titres. */
 .borderTitle {
-	padding: 2px 12px 2px 17px;
+	padding: 2px 12px 5px 17px;
 	margin-top: 5vh;
 	margin-bottom: 2vh;
 	border-radius: 10px;
@@ -180,7 +186,7 @@ p, a, q {
 /*. --------------------La colorisation des titres.-------------------- */
 
 /*) Une classe CSS qui sera utilisée pour colorer le texte en blanc et le fond en orange. */
-.colorTitreUne {
+.couleurTitreUne {
 	color: white;
 	background-color: #b7774a;
 }

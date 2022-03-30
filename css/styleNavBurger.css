@@ -42,14 +42,15 @@ header {
     height: 75px;
     padding-left: 50px;
     padding-top: 10px;
+    padding-bottom: 5px;
     align-self: baseline;
 }
 
 /*£ Modification du titre de la main nav. */
 .titreNavbar {
     display: block ruby;
-    font-family: 'Ballet', cursive;
-    font-size: 3vh;
+    font-family: 'Cookie', cursive;
+    font-size: 6vh;
     padding: 10px 20px 10px 10px;
 }
 
@@ -110,6 +111,7 @@ header {
 /*£ L'icône du menu burger. */
 #ham {
     margin-left: 5vw;
+    margin-right: 4vw;
     font-size: 4vh;
 }
 
@@ -240,11 +242,6 @@ header {
     /*$ Réduction de la taille de la navbar. */
     .navbar {
         height: 9vh;
-    }
-
-    /*$ Réduction du titre de la main nav. */
-    .titreNavbar {
-        font-size: 3.5vh;
     }
 }
 
