@@ -2,12 +2,6 @@
 
 Utiliser la fonction include du php pour inclure de façon dynamique des éléments comme la navbar et le footer ?
 
-= Les témoignages :
-
-Ajouter un carousel pour naviguer entre les témoignages.
-
-Regarder ce que je trouve comme carousel sympa pour aller avec l'effet 3D de l'ombre des div de la section.
-
 = Le footer :
 
 Ajouter un padding entre les icônes et les liens de navigation.
@@ -25,8 +19,6 @@ Vérifier le projet sur d'autres naviguateur ( il semble cassé sur chrome ).
 
 Séparer les codes CSS pour mobile et tablette afin d'optimiser le chargement sur ordinateur.
 <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)"> <!-- non bloquant sur grand écran -->
-
-Transformer les <p> de la barre des réseaux sociaux en <a>.
 
 Faire des favicons.
 

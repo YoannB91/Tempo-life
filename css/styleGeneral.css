@@ -133,17 +133,6 @@ p, a, q {
 
 /*
 . --------------------------------------------------------------------------------
-                                £ L'alignement.
-. --------------------------------------------------------------------------------
-*/
-
-/*= Une classe CSS qui permet de centrer un élément. */
-.center {
-	text-align: center;
-}
-
-/*
-. --------------------------------------------------------------------------------
                                 £ Colorisation des textes.
 . --------------------------------------------------------------------------------
 */
@@ -241,7 +230,8 @@ p, a, q {
 
 	/*. --------------------Les titres.-------------------- */
 
-	/*µ Réduction de la taille des titres secondaires. */
+	/*é Réduction de la taille des titres secondaires. */
+
 	h2 {
 		font-size: 5vh;
 	}
@@ -256,7 +246,7 @@ p, a, q {
 	: ************************************************************************************************************
 	*/
 
-	/*$ Cette classe CSS permet de centrer des éléments en mode responsive. */
+	/*é Cette classe CSS permet de centrer des éléments en mode responsive. */
 	.centrageMobile {
 		margin-right: 5vw;
 		margin-left: 5vw;
@@ -264,17 +254,17 @@ p, a, q {
 
 	/*. --------------------Les titres.-------------------- */
 
-	/*$ Le titre ne s'affiche pas totalement à l'écran en mode responsive. */
+	/*é Certain titre ne s'affiche pas totalement à l'écran en mode responsive. */
 	.titreCenter {
 		display: flex;
 	}
 
-	/*$ Recentrage du texte et augmentation des espaces autours. */
+	/*é Recentrage du texte et augmentation des espaces autours. */
 	.borderTitle {
 		text-align: center;
-		margin: 3vh 5vw 2vh;
 		padding: 0 6px;
 		border-radius: 6px;
+		margin: 3vh auto 2vh;
 	}
 
 }

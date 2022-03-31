@@ -14,7 +14,7 @@
 }
 
 /*: Alignement des icônes à droite de l'écran. */
-#socialBarHeader .fa-facebook-f {
+#barreRSFacebook {
 	margin-left: auto;
 }
 
@@ -124,6 +124,11 @@
 }
 
 /*. --------------------La zone d'illustration.-------------------- */
+
+/*& Classe CSS permettant d'aligner le lecteur audio au centre de la section. */
+#illustrationCour {
+	text-align: center;
+}
 
 /*& Mise en forme de l'image d'illustration de la section "Les cours de musique" */
 #imgCour {
@@ -239,6 +244,8 @@
 	margin: 5vh 2vw;
 }
 
+/*. --------------------L'en-tête des témoignages.-------------------- */
+
 /*é Les éléments des en-têtes des témoignages doivent être alignés. */
 .enTeteTemoignage {
 	display: flex;
@@ -257,6 +264,50 @@
 	margin: 1vh 1vw;
 }
 
+/*é Centrage de la note. */
+.noteTemoignage {
+	margin-top: 1vh;
+}
+
+/*é Customisation des noms des témoins. */
+.nomTemoin {
+	font-weight: bold;
+}
+
+/*é Customisation de la taille des étoiles. */
+.noteTemoignage em {
+	font-size: 2.5vh;
+}
+
+/*é Customisation des étoiles pleines. */
+.etoilePleine {
+	color: #ffca00;
+}
+
+/*é Customisation des étoiles vides. */
+.etoileVide {
+	color: grey;
+}
+
+/*é Centrage de la date du témoignage. */
+.dateTemoignage {
+	margin: auto;
+}
+
+/*. --------------------Le corps des témoignages.-------------------- */
+
+/*é Customisation de la ligne qui sépare l'en-tête et le corps du témoignage. */
+.ligneSeparationTemoignage {
+	border-top: 1px solid gray;
+}
+
+/*é Customisation du corps du témoignage. */
+.corpsTemoignage {
+	font-size: 2vh;
+	padding: 1vh 2vw 2vh;
+	line-height: 3.5vh;
+}
+
 
 
 
@@ -267,28 +318,40 @@
 */
 
 /*
-. --------------------------------------------------------------------------------
-                                £ Je cible uniquement les mobiles.
-. --------------------------------------------------------------------------------
+: ************************************************************************************************************
+										% Je cible uniquement les mobiles.
+: ************************************************************************************************************
 */
 
 @media screen and (max-width: 600px) {
 
-	/*. --------------------La barre des réseaux sociaux.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ La barre des réseaux sociaux.
+	. --------------------------------------------------------------------------------
+	*/
 
 	/*è Réduction de l'espace entre les icônes. */
 	#socialBarHeader em {
 		padding-left: 18px;
 	}
 
-	/*. --------------------L'accueil.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ L'accueil.
+	. --------------------------------------------------------------------------------
+	*/
 
 	/*è Réduction de la taille du titre de l'accueil. */
 	#accueil h2 {
 		font-size: 6vh;
 	}
 
-	/*. --------------------Les professeurs.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ Les professeurs.
+	. --------------------------------------------------------------------------------
+	*/
 
 	/*è Réduction de la taille de la photo qui apparaît pour les mobiles. */
 	.photoProf {
@@ -300,17 +363,51 @@
 	.panneauProf {
 		width: 225px;
 	}
+
+	/*
+	. --------------------------------------------------------------------------------
+									£ Les témoignages.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*. --------------------L'en-tête des témoignages.-------------------- */
+
+	/*è Les éléments de l'en-tête passent les uns au-dessus des autres pour les mobiles. */
+	.enTeteTemoignage {
+		display: block;
+	}
+
+	/*è Centrage des éléments de l'en-tête pour les mobiles. */
+	.noteTemoignage {
+		text-align: center;
+	}
+	.nomTemoin {
+		text-align: center;
+	}
+	.dateTemoignage {
+		text-align: center;
+	}
+
+	/*è Espacement autour des étoiles pour les mobiles. */
+	.noteTemoignage em {
+		margin-top: 1vh;
+		margin-bottom: 1.5vh;
+	}
 }
 
 /*
-. --------------------------------------------------------------------------------
-                                £ Je cible uniquement les tablettes
-. --------------------------------------------------------------------------------
+: ************************************************************************************************************
+										% Je cible uniquement les tablettes.
+: ************************************************************************************************************
 */
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
 
-	/*. --------------------L'accueil.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ L'accueil.
+	. --------------------------------------------------------------------------------
+	*/
 
 	/*$ Réduction de la taille du titre de l'accueil. */
 	#accueil h2 {
@@ -322,7 +419,13 @@
 		font-size: 5vh;
 	}
 
-	/*. --------------------Les professeurs.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ Les professeurs.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*. --------------------Les cadres photos.-------------------- */
 
 	/*$ Réduction de la taille de la photo pour les tablettes. */
 	.photoProf {
@@ -334,6 +437,8 @@
 	.panneauProf {
 		width: 400px;
 	}
+
+	/*. --------------------Le carousel.-------------------- */
 
 	/*$ Réduction de la taille des flèches pour les tablettes. */
 	#carouselProf em {
@@ -352,14 +457,18 @@
 }
 
 /*
-. --------------------------------------------------------------------------------
-                                £ Je cible les tablettes et les mobiles.
-. --------------------------------------------------------------------------------
+: ************************************************************************************************************
+										% Je cible les tablettes et les mobiles.
+: ************************************************************************************************************
 */
 
 @media only screen and (max-device-width: 1366px) {
 
-	/*. --------------------La barre des réseaux sociaux.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ La barre des réseaux sociaux.
+	. --------------------------------------------------------------------------------
+	*/
 
 	/*é Réduction de la taille des la barre des réseaux sociaux en mode responsive. */
 	#socialBarHeader {
@@ -371,17 +480,25 @@
 		padding-right: 25px;
 	}
 
-	/*. --------------------Les cours de musique.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ Les cours de musique.
+	. --------------------------------------------------------------------------------
+	*/
 
-	/*é Permet d'empiler les parties de la section. */
+	/*é Le titre ne doit pas s'étaler sur tout la longueur de l'écran. */
+	#introCoursMusique {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	/*é Permet d'empiler les parties de la section et de réduire l'espacement entre le titre et l'icône du CD. */
 	#courMusique {
 		display: block;
-	}
-
-	/*é Réduction de l'espacement entre le titre et l'icône du CD. */
-	#courMusique {
 		margin: 3vh 3vw;
 	}
+
+	/*. --------------------La zone de texte.-------------------- */
 
 	/*é Disparition de l'icône du CD du paragraphe.  */
 	#cdCour {
@@ -395,10 +512,11 @@
 		margin-bottom: 3vh;
 	}
 
-	/*é Augmentation de la taille du bouton et centrage du texte. */
+	/*é Augmentation de la taille du bouton, centrage du texte et réduction de la taille du lien. */
 	#lienCour {
 		display: block;
 		text-align: center;
+		font-size: 3.5vh;
 	}
 
 	/*é Réduction de l'espace entre le bouton et le texte. */
@@ -406,10 +524,7 @@
 		margin-bottom: 3vh;
 	}
 
-	/*é Réduction de la taille du lien. */
-	#lienCour {
-		font-size: 3.5vh;
-	}
+	/*. --------------------La zone d'illustration.-------------------- */
 
 	/*é Augmentation de l'espace entre le bouton et la section des illustrations. */
 	#illustrationCour {
@@ -429,7 +544,19 @@
 		margin-top: 2vh;
 	}
 
-	/*. --------------------Les professeurs.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ Les professeurs.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*é Centrage du sous-titre en mode responsive. */
+	#sousTitreProfesseur {
+		display: block;
+		text-align: center;
+	}
+
+	/*. --------------------Les cadres photos.-------------------- */
 
 	/*é Disparition des cadres du mode ordinateur. */
 	.emplacementCadreProf {
@@ -441,15 +568,12 @@
 		display: block;
 	}
 
-	/*é Centrage du titre en mode responsive. */
-	#titreMobileProf {
-		margin: 3vh auto 2vh;
-	}
-
 	/*é Réduction de la taille du texte des panneaux en mode responsive. */
 	.panneauProf {
 		font-size: 3.5vh;
 	}
+
+	/*. --------------------Le carousel.-------------------- */
 
 	/*é Ajout de marges autour du carousel en mode responsive. */
 	#carouselProf {
@@ -466,4 +590,40 @@
 	#flecheGaucheProf {
 		margin-right: 0;
 	}
+
+	/*
+	. --------------------------------------------------------------------------------
+									£ Les témoignages.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*é Les témoignages vont s'empiler en mode responsive. */
+	#temoignages {
+		display: block;
+	}
+
+	/*é Augmentation de la taille et centrage des témoignages en mode responsive. */
+	.temoignage {
+		width: 90vw;
+		margin: 5vh 5vw;
+	}
+
+	/*. --------------------L'en-tête des témoignages.-------------------- */
+
+	/*é Centrage du logo du témoin. */
+	.logoTemoignage {
+		margin: 1.5vh auto 1vh;
+	}
+
+	/*é Centrage de la note du témoin. */
+	.noteTemoignage {
+		margin: auto;
+	}
+
+	.corpsTemoignage {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	/*. --------------------Le corps des témoignages.-------------------- */
 }
