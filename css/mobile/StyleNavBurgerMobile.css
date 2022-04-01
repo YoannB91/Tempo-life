@@ -1,0 +1,80 @@
+/*
+: ************************************************************************************************************
+                                            % Le mode responsive de la barre de navigation.
+: ************************************************************************************************************
+*/
+
+@media screen and (max-width: 1024px) {
+
+    /*
+    . --------------------------------------------------------------------------------
+            £ Je montre les éléments de la side nav, et cache ceux de la mainNav.
+    . --------------------------------------------------------------------------------
+    */
+
+    /*$ Réapparition du titre et du bouton burger de la side nav. */
+    .openSideNav {
+        display: flex;
+    }
+
+    /*$ Disparition des liens et du logo du mode ordinateur. */
+    #liensMainNavbar, .logoTitreMainNavbar {
+        display: none;
+    }
+
+    /*$ Je remet les éléments de la barre de navigation mobile à l'écran. */
+    #ham, #topNav h1, sideNav {
+        display: block;
+    }
+
+    /*$ Séparation des icônes et des liens de la side nav. */
+    #sideMenu1 em {
+        padding-right: 10px;
+    }
+
+    /*
+    . --------------------------------------------------------------------------------
+                                £ Modification de la side nav
+    . --------------------------------------------------------------------------------
+    */
+
+    /*$ Réduction de la taille de la navbar. */
+    .navbar {
+        height: 9vh;
+    }
+}
+
+/*
+: ************************************************************************************************************
+                                            % Je cible uniquement les mobiles.
+: ************************************************************************************************************
+*/
+
+@media screen and (max-width: 600px) {
+
+    /*$ Réduction du logo de la side nav. */
+    #logoSideNavbar {
+        height: 7vh;
+    }
+
+}
+
+/*
+: ************************************************************************************************************
+                                            % Je cible uniquement les tablettes.
+: ************************************************************************************************************
+*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /*$ Éloignement du bouton burger du bord de l'écran. */
+    #ham {
+        margin-right: 15vw;
+    }
+
+    /*$ Centrage de la liste des liens de la side nav. */
+    #listeLienSideMenu {
+        padding-top: 20vh;
+    }
+
+}

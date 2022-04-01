@@ -2,20 +2,10 @@
 
 Utiliser la fonction include du php pour inclure de façon dynamique des éléments comme la navbar et le footer ?
 
-= Le footer :
-
-Ajouter un padding entre les icônes et les liens de navigation.
-
-= L'ancre :
-
-Ajouter une ancre en forme de note de musique en bas à droite de l'écran.
-
-La faire plus grande que le footer et lui ajouter un z-index inférieur au sien afin que sa partie inférieur passe en dessous du footer.
-
-
 <-------------------- La fin du projet. -------------------->
 
 Vérifier le projet sur d'autres naviguateur ( il semble cassé sur chrome ).
+Remplacer les [display: block ruby;] par des [display: block; text-align: center;] ?
 
 Séparer les codes CSS pour mobile et tablette afin d'optimiser le chargement sur ordinateur.
 <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)"> <!-- non bloquant sur grand écran -->

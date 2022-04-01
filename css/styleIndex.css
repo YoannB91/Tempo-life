@@ -4,7 +4,7 @@
 : ************************************************************************************************************
 */
 
-/*: La barre des réseaux sociaux. */
+/*è La barre des réseaux sociaux. */
 #socialBarHeader {
 	background-color: #b7774a;
 	height: 5vh;
@@ -13,19 +13,19 @@
     align-items: center;
 }
 
-/*: Alignement des icônes à droite de l'écran. */
+/*è Alignement des icônes à droite de l'écran. */
 #barreRSFacebook {
 	margin-left: auto;
 }
 
-/*: Les règles des icônes. */
+/*è Les règles des icônes. */
 #socialBarHeader em {
 	color: white;
 	padding-left: 25px;
     font-size: 2.5vh;
 }
 
-/*: J'éloigne la dernière icône du bord de l'écran. */
+/*è J'éloigne la dernière icône du bord de l'écran. */
 #socialBarHeader .fa-google {
 	padding-right: 50px;
 }
@@ -44,8 +44,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: static;
-	z-index: 1;
+	position: relative;
+	z-index: 5;
 }
 
 /*= Le titre de l'accueil. */
@@ -136,6 +136,8 @@
 	border: 8px solid #b7774a;
 	border-radius: 8px;
 	box-shadow: 3px 3px 8px 2px #dfc0ae;
+	position: relative;
+	z-index: 5;
 }
 
 /*& Mise en forme de l'audio de démonstration de la section "Les cours de musique". */
@@ -176,7 +178,7 @@
 	background-color: white;
 	color: #b7774a;
 	text-align: center;
-	font-size: 4.5vh;
+	font-size: 4vh;
 	font-weight: bold;
 	overflow: hidden;
 	margin-top: -7px;
@@ -202,6 +204,8 @@
 	color: white;
 	cursor: pointer;
 	align-self: center;
+	position: relative;
+	z-index: 5;
 }
 
 /*- Le code CSS de la flèche gauche du carousel des professeurs. */
@@ -242,6 +246,8 @@
 	border-radius: 10px;
 	box-shadow: 0 0 16px 8px #dfc0ae;
 	margin: 5vh 2vw;
+	position: relative;
+	z-index: 5;
 }
 
 /*. --------------------L'en-tête des témoignages.-------------------- */
@@ -308,6 +314,67 @@
 	line-height: 3.5vh;
 }
 
+/*
+: ************************************************************************************************************
+										% Le footer.
+: ************************************************************************************************************
+*/
+
+/*, Modification du footer. */
+footer {
+	display: flex;
+	background-color: #432918;
+	position: relative;
+	z-index: 5;
+}
+
+/*. --------------------Le texte du copyright.-------------------- */
+
+/*, Disparition du texte pour les mobiles. */
+#copyrightMobile {
+	display: none;
+}
+
+/*, Ajout de marge autours du texte. */
+#copyright {
+	display: flex;
+	align-items: center;
+	margin: 1vh 0 1vh 3vw;
+}
+
+/*, Espacement des différentes partie du copyright. */
+#separationCopyright {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*. --------------------La mini navigation du footer.-------------------- */
+
+/*, Stylisation de la navigation du footer. */
+#navFooter {
+	display: flex;
+	align-items: center;
+	margin: 1vh 2vw 1vh auto;
+}
+
+/*, Changement de la puce des liens de la mini navigation du footer. */
+/*! Il est impossible d'utiliser la propriété [list-style: ;] avec un [display: block;]. */
+footer ul li::before {
+	content: '\01D11E';
+}
+
+/*, Customisation des liens du footer. */
+.lienFooter {
+	padding-left: 5px;
+	padding-right: 30px;
+	font-size: 3vh;
+}
+
+/*, Suppression de la marge du dernier lien de la navigation du footer. */
+#dernierLienFooter {
+	padding-right: 0;
+}
+
 
 
 
@@ -342,7 +409,7 @@
 	. --------------------------------------------------------------------------------
 	*/
 
-	/*è Réduction de la taille du titre de l'accueil. */
+	/*= Réduction de la taille du titre de l'accueil. */
 	#accueil h2 {
 		font-size: 6vh;
 	}
@@ -353,13 +420,13 @@
 	. --------------------------------------------------------------------------------
 	*/
 
-	/*è Réduction de la taille de la photo qui apparaît pour les mobiles. */
+	/*- Réduction de la taille de la photo qui apparaît pour les mobiles. */
 	.photoProf {
 		height: 225px;
 		width: 225px;
 	}
 
-	/*è Réduction de la taille du cadre qui apparaît pour les mobiles. */
+	/*- Réduction de la taille du cadre qui apparaît pour les mobiles. */
 	.panneauProf {
 		width: 225px;
 	}
@@ -372,12 +439,12 @@
 
 	/*. --------------------L'en-tête des témoignages.-------------------- */
 
-	/*è Les éléments de l'en-tête passent les uns au-dessus des autres pour les mobiles. */
+	/*é Les éléments de l'en-tête passent les uns au-dessus des autres pour les mobiles. */
 	.enTeteTemoignage {
 		display: block;
 	}
 
-	/*è Centrage des éléments de l'en-tête pour les mobiles. */
+	/*é Centrage des éléments de l'en-tête pour les mobiles. */
 	.noteTemoignage {
 		text-align: center;
 	}
@@ -388,7 +455,7 @@
 		text-align: center;
 	}
 
-	/*è Espacement autour des étoiles pour les mobiles. */
+	/*é Espacement autour des étoiles pour les mobiles. */
 	.noteTemoignage em {
 		margin-top: 1vh;
 		margin-bottom: 1.5vh;
@@ -409,12 +476,12 @@
 	. --------------------------------------------------------------------------------
 	*/
 
-	/*$ Réduction de la taille du titre de l'accueil. */
+	/*= Réduction de la taille du titre de l'accueil. */
 	#accueil h2 {
 		font-size: 8vh;
 	}
 
-	/*$ Réduction de la taille du lien de l'accueil. */
+	/*= Réduction de la taille du lien de l'accueil. */
 	#accueil p, #accueil .fa-solid {
 		font-size: 5vh;
 	}
@@ -427,30 +494,30 @@
 
 	/*. --------------------Les cadres photos.-------------------- */
 
-	/*$ Réduction de la taille de la photo pour les tablettes. */
+	/*- Réduction de la taille de la photo pour les tablettes. */
 	.photoProf {
 		height: 400px;
 		width: 400px;
 	}
 
-	/*$ Réduction de la taille du cadre pour les tablettes. */
+	/*- Réduction de la taille du cadre pour les tablettes. */
 	.panneauProf {
 		width: 400px;
 	}
 
 	/*. --------------------Le carousel.-------------------- */
 
-	/*$ Réduction de la taille des flèches pour les tablettes. */
+	/*- Réduction de la taille des flèches pour les tablettes. */
 	#carouselProf em {
 		font-size: 7vh;
 	}
 
-	/*$ Éloignement du bord de l'écran de la flèche gauche du carousel pour les tablettes. */
+	/*- Éloignement du bord de l'écran de la flèche gauche du carousel pour les tablettes. */
 	#flecheGaucheProf {
 		margin-left: 5vw;
 	}
 
-	/*$ Éloignement du bord de l'écran de la flèche droite du carousel pour les tablettes. */
+	/*- Éloignement du bord de l'écran de la flèche droite du carousel pour les tablettes. */
 	#flecheDroiteProf {
 		margin-right: 5vw;
 	}
@@ -462,7 +529,7 @@
 : ************************************************************************************************************
 */
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 1024px) {
 
 	/*
 	. --------------------------------------------------------------------------------
@@ -470,12 +537,12 @@
 	. --------------------------------------------------------------------------------
 	*/
 
-	/*é Réduction de la taille des la barre des réseaux sociaux en mode responsive. */
+	/*è Réduction de la taille des la barre des réseaux sociaux en mode responsive. */
 	#socialBarHeader {
 		height: 4vh;
 	}
 
-	/*é Réduction de l'espace entre la dernière icône et le bord de l'écran. */
+	/*è Réduction de l'espace entre la dernière icône et le bord de l'écran. */
 	#socialBarHeader .fa-google {
 		padding-right: 25px;
 	}
@@ -486,13 +553,13 @@
 	. --------------------------------------------------------------------------------
 	*/
 
-	/*é Le titre ne doit pas s'étaler sur tout la longueur de l'écran. */
+	/*& Le titre ne doit pas s'étaler sur tout la longueur de l'écran. */
 	#introCoursMusique {
 		margin-left: 5vw;
 		margin-right: 5vw;
 	}
 
-	/*é Permet d'empiler les parties de la section et de réduire l'espacement entre le titre et l'icône du CD. */
+	/*& Permet d'empiler les parties de la section et de réduire l'espacement entre le titre et l'icône du CD. */
 	#courMusique {
 		display: block;
 		margin: 3vh 3vw;
@@ -500,45 +567,45 @@
 
 	/*. --------------------La zone de texte.-------------------- */
 
-	/*é Disparition de l'icône du CD du paragraphe.  */
+	/*& Disparition de l'icône du CD du paragraphe.  */
 	#cdCour {
 		display: none;
 	}
 
-	/*é Apparition de l'icône du CD de la version mobile de la page. */
+	/*& Apparition de l'icône du CD de la version mobile de la page. */
 	#cdCourMobile {
 		display: block;
 		text-align: center;
 		margin-bottom: 3vh;
 	}
 
-	/*é Augmentation de la taille du bouton, centrage du texte et réduction de la taille du lien. */
+	/*& Augmentation de la taille du bouton, centrage du texte et réduction de la taille du lien. */
 	#lienCour {
 		display: block;
 		text-align: center;
 		font-size: 3.5vh;
 	}
 
-	/*é Réduction de l'espace entre le bouton et le texte. */
+	/*& Réduction de l'espace entre le bouton et le texte. */
 	#texteCour {
 		margin-bottom: 3vh;
 	}
 
 	/*. --------------------La zone d'illustration.-------------------- */
 
-	/*é Augmentation de l'espace entre le bouton et la section des illustrations. */
+	/*& Augmentation de l'espace entre le bouton et la section des illustrations. */
 	#illustrationCour {
 		margin-top: 3vh;
 	}
 
-	/*é Restructuration de l'image. */
+	/*& Restructuration de l'image. */
 	#imgCour {
 		width: 80vw;
 		border: 5px solid #b7774a;
 		border-radius: 4px;
 	}
 
-	/*é Augmentation de la taille du lecteur audio. */
+	/*& Augmentation de la taille du lecteur audio. */
 	#audioCour {
 		width: 80vw;
 		margin-top: 2vh;
@@ -550,7 +617,7 @@
 	. --------------------------------------------------------------------------------
 	*/
 
-	/*é Centrage du sous-titre en mode responsive. */
+	/*- Centrage du sous-titre en mode responsive. */
 	#sousTitreProfesseur {
 		display: block;
 		text-align: center;
@@ -558,35 +625,35 @@
 
 	/*. --------------------Les cadres photos.-------------------- */
 
-	/*é Disparition des cadres du mode ordinateur. */
+	/*- Disparition des cadres du mode ordinateur. */
 	.emplacementCadreProf {
 		display: none;
 	}
 
-	/*é Apparition du cadre du mode responsive.  */
+	/*- Apparition du cadre du mode responsive.  */
 	#emplacementCadreProfMobile {
 		display: block;
 	}
 
-	/*é Réduction de la taille du texte des panneaux en mode responsive. */
+	/*- Réduction de la taille du texte des panneaux en mode responsive. */
 	.panneauProf {
 		font-size: 3.5vh;
 	}
 
 	/*. --------------------Le carousel.-------------------- */
 
-	/*é Ajout de marges autour du carousel en mode responsive. */
+	/*- Ajout de marges autour du carousel en mode responsive. */
 	#carouselProf {
 		margin-top: 3vh;
 		padding-bottom: 3vh;
 	}
 
-	/*é Réduction de la taille des flèches du carousel en mode responsive. */
+	/*- Réduction de la taille des flèches du carousel en mode responsive. */
 	#carouselProf em {
 		font-size: 5vh;
 	}
 
-	/*é Cette marge empêche le centrage du cadre en mode responsive. */
+	/*- Cette marge empêche le centrage du cadre en mode responsive. */
 	#flecheGaucheProf {
 		margin-right: 0;
 	}
@@ -620,10 +687,46 @@
 		margin: auto;
 	}
 
+	/*. --------------------Le corps des témoignages.-------------------- */
+
+	/*é Espacement du texte du témoignage. */
 	.corpsTemoignage {
 		padding-left: 5vw;
 		padding-right: 5vw;
 	}
 
-	/*. --------------------Le corps des témoignages.-------------------- */
+	/*
+	. --------------------------------------------------------------------------------
+									£ Le footer.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*, Modification de la disposition des éléments du footer, et apparition du copyright pour les mobiles. */
+	footer, #copyrightMobile, #navFooter {
+		display: block;
+	}
+
+	/*. --------------------Le texte du copyright.-------------------- */
+
+	/*, Disparition du texte pour les ordinateurs. */
+	#copyright {
+		display: none;
+	}
+
+	/*, Espacement du texte du copyright pour les mobiles. */
+	#texteCopyrightMobile {
+		padding-top: 1vh;
+	}
+
+	/*. --------------------La mini navigation du footer.-------------------- */
+
+	/*, Les marges étaient de trop. */
+	#navFooter {
+		margin: 0;
+	}
+
+	/*, Espacement des liens  */
+	.lienFooter {
+		margin-top: 1vh;
+	}
 }

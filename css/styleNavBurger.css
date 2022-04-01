@@ -1,33 +1,27 @@
 /*
 : ************************************************************************************************************
-                                            % Barre de navigation responsive V 2.0.
+                                            % Les règles générales de la navbar.
 : ************************************************************************************************************
-*/
-
-/*
-. --------------------------------------------------------------------------------
-                                        £ Les règles générales.
-. --------------------------------------------------------------------------------
 */
 
 /*? La barre de navigation doit se coller en haut de l'écran. */
 header {
     position: sticky;
     top: 0;
-}
-
-/*? Placement des barres de navigation au-dessus de la plupart des éléments de la page. */
-.navbar, .sideNav {
     z-index: 90;
 }
 
 /*
-. --------------------------------------------------------------------------------
-                                        £ Le mode ordinateur.
-. --------------------------------------------------------------------------------
+: ************************************************************************************************************
+                                            % Le mode ordinateur.
+: ************************************************************************************************************
 */
 
-/*. --------------------La navbar en général.-------------------- */
+/*
+. --------------------------------------------------------------------------------
+                                        £ La navbar en général.
+. --------------------------------------------------------------------------------
+*/
 
 /*£ Modification de la main nav. */
 #mainNavbar {
@@ -101,12 +95,16 @@ header {
 }
 
 /*
-. --------------------------------------------------------------------------------
-                                £ Le mode mobile et tablette.
-. --------------------------------------------------------------------------------
+: ************************************************************************************************************
+                                            % Le mode mobile et tablette.
+: ************************************************************************************************************
 */
 
-/*. --------------------Les éléments de remplacement pour la main nav.-------------------- */
+/*
+. --------------------------------------------------------------------------------
+                                        £ Les éléments de remplacement pour la main nav.
+. --------------------------------------------------------------------------------
+*/
 
 /*£ L'icône du menu burger. */
 #ham {
@@ -127,7 +125,11 @@ header {
     padding: 5vw 10px;
 }
 
-/*. --------------------La side nav.-------------------- */
+/*
+. --------------------------------------------------------------------------------
+                                        £ La side nav.
+. --------------------------------------------------------------------------------
+*/
 
 /*£ La side nav pour les mobiles. */
 .sideNav {
@@ -180,7 +182,11 @@ header {
     font-size: 2.5vh;
 }
 
-/*. --------------------Les Hide & Show.-------------------- */
+/*
+: ************************************************************************************************************
+                                            % Les Hide & Show.
+: ************************************************************************************************************
+*/
 
 /*£ La fonction hide qui me permet de cacher le menu vertical. */
 .hideMenuVertical {
@@ -199,83 +205,4 @@ header {
 /*£ Disparition de la navbar lors de l'ouverture de la side nav. */
 .hideMainNavbar {
     display: none;
-}
-
-/*
-: ************************************************************************************************************
-                                    % Les règles pour les mobiles et les tablettes.
-: ************************************************************************************************************
-*/
-
-/*
-. --------------------------------------------------------------------------------
-                            £ Le mode responsive de la barre de navigation.
-. --------------------------------------------------------------------------------
-*/
-
-@media screen and (max-width: 1024px) {
-
-    /*. --------------------Je montre les éléments de la side nav, et cache ceux de la mainNav.-------------------- */
-
-    /*$ Réapparition du titre et du bouton burger de la side nav. */
-    .openSideNav {
-        display: flex;
-    }
-
-    /*$ Disparition des liens et du logo du mode ordinateur. */
-    #liensMainNavbar, .logoTitreMainNavbar {
-        display: none;
-    }
-
-    /*$ Je remet les éléments de la barre de navigation mobile à l'écran. */
-    #ham, #topNav h1, sideNav {
-        display: block;
-    }
-
-    /*$ Séparation des icônes et des liens de la side nav. */
-    #sideMenu1 em {
-        padding-right: 10px;
-    }
-
-    /*. --------------------Modification de la side nav.-------------------- */
-
-    /*$ Réduction de la taille de la navbar. */
-    .navbar {
-        height: 9vh;
-    }
-}
-
-/*
-. --------------------------------------------------------------------------------
-                                £ Je cible uniquement les mobiles.
-. --------------------------------------------------------------------------------
-*/
-
-@media screen and (max-width: 600px) {
-
-    /*$ Réduction du logo de la side nav. */
-    #logoSideNavbar {
-        height: 7vh;
-    }
-
-}
-
-/*
-. --------------------------------------------------------------------------------
-                                £ Je cible uniquement les tablettes
-. --------------------------------------------------------------------------------
-*/
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-
-    /*$ Éloignement du bouton burger du bord de l'écran. */
-    #ham {
-        margin-right: 15vw;
-    }
-
-    /*$ Centrage de la liste des liens de la side nav. */
-    #listeLienSideMenu {
-        padding-top: 20vh;
-    }
-
 }

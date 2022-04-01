@@ -114,6 +114,16 @@ p, a, q {
 
 /*
 . --------------------------------------------------------------------------------
+                                £ Définition des font-weight.
+. --------------------------------------------------------------------------------
+*/
+
+strong {
+	font-weight: bold;
+}
+
+/*
+. --------------------------------------------------------------------------------
                                 £ Définition des espacements.
 . --------------------------------------------------------------------------------
 */
@@ -187,16 +197,43 @@ p, a, q {
 
 /*
 . --------------------------------------------------------------------------------
+                                £ Les alignements.
+. --------------------------------------------------------------------------------
+*/
+
+/*$ Une classe CSS qui sera utilisée pour centrer des éléments. */
+.center {
+	text-align: center;
+}
+
+/*
+. --------------------------------------------------------------------------------
                                 £ L'effet parallax.
 . --------------------------------------------------------------------------------
 */
 
-/*? L'effet parallax pour les images. */
+/*? Une classe CSS qui sera utilisée pour créer un effet parallax sur les images. */
 .parallax {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ L'ancre.
+. --------------------------------------------------------------------------------
+*/
+
+/*- Une classe CSS qui sera utilisée pour créer une ancre en base des pages. */
+.ancre {
+	font-size: 5vh;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	opacity: 0.2;
+	color: black;
 }
 
 
@@ -214,7 +251,7 @@ p, a, q {
 . --------------------------------------------------------------------------------
 */
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 1024px) {
 
 	/*
 	: ************************************************************************************************************
@@ -265,6 +302,13 @@ p, a, q {
 		padding: 0 6px;
 		border-radius: 6px;
 		margin: 3vh auto 2vh;
+	}
+
+	/*. --------------------L'ancre.-------------------- */
+
+	/*- L'ancre est inutile sur mobile. */
+	.ancre {
+		display: none;
 	}
 
 }

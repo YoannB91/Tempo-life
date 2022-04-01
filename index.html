@@ -26,10 +26,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--£ Le fichier CSS des règles générales. -->
-    <link rel="stylesheet" href="css/styleGeneral.css">
+    <link rel="stylesheet" href="css/styleGenerale.css">
 
     <!--£ Le fichier CSS de la navbar. -->
     <link rel="stylesheet" href="css/styleNavBurger.css">
+    <link rel="stylesheet" href="css/mobile/StyleNavBurgerMobile.css" media="screen and (max-width: 1024px)">
 
     <!--£ Le fichier CSS principal. -->
     <link rel="stylesheet" href="css/styleIndex.css">
@@ -155,7 +156,7 @@
         . --------------------------------------------------------------------------------
         -->
 
-        <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical" aria-label="Navbar mobile.">
+        <nav id="cacherElementMenuVertical" class="sideNav hideMenuVertical" aria-label="Navbar mobile.">
 
             <!--: Le bouton "X" qui permet la fermeture de la side nav. -->
             <button class="menuX" id="menuX" aria-label="Fermer side nav.">
@@ -205,6 +206,16 @@
     </header>
 
     <main>
+
+        <!--
+        : ************************************************************************************************************
+                                                    % L'ancre.
+        : ************************************************************************************************************
+        -->
+
+        <a href="index.html">
+            <em class="fa-solid fa-music ancre" title="Revenir à l'accueil." aria-label="Retour à l'accueil."></em>
+        </a>
 
         <!--
         : ************************************************************************************************************
@@ -543,7 +554,57 @@
     : ************************************************************************************************************
     -->
 
-    <footer>
+    <footer class="couleurBlanche">
+
+        <div id="copyright">
+
+            <p>
+                Copyright &copy; 2022
+            </p>
+
+            <p id="separationCopyright">
+                |
+            </p>
+
+            <p>
+                <strong>Tempo life</strong> Tous droits réservés
+            </p>
+
+        </div>
+
+        <div id="copyrightMobile">
+
+            <p id="texteCopyrightMobile" class="center">
+                Copyright &copy; 2022 |
+            </p>
+
+            <p class="center">
+                <strong>Tempo life</strong> Tous droits réservés
+            </p>
+
+        </div>
+
+        <ul id="navFooter">
+
+            <li class="lienFooter center">
+                <a href="#" class="couleurBlanche">
+                    Mentions légales
+                </a>
+            </li>
+
+            <li class="lienFooter center">
+                <a href="#" class="couleurBlanche">
+                    Données Personnelles
+                </a>
+            </li>
+
+            <li id="dernierLienFooter" class="lienFooter center">
+                <a href="#" class="couleurBlanche">
+                    Foire aux questions
+                </a>
+            </li>
+
+        </ul>
 
     </footer>
 
